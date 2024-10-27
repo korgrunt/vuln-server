@@ -1,0 +1,4 @@
+venv/*
+node-modules/*
+venv
+node-modules
