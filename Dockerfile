@@ -11,9 +11,9 @@ FROM jenkins/jenkins:lts-jdk17
 # Passer en mode root pour installer les paquets
 USER root
 
-# Installer Node.js, npm, Python3 avec venv, et Nuclei
+# Installer Node.js, npm, Python3 avec venv
 RUN apt-get update && \
-    apt-get install -y nodejs npm python3 python3-semgrep python3-pip python3-venv curl && \
+    apt-get install -y nodejs npm python3 python3-pip python3-venv curl && \
     rm -rf /var/lib/apt/lists/*
 
 
